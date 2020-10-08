@@ -1,0 +1,25 @@
+;
+;  Database file contoso.adds.dns.txt for Default zone scope in zone contoso.adds.
+;      Zone version:  8
+;
+
+@                       IN  SOA srv-win2019. hostmaster. (
+                        		8            ; serial number
+                        		900          ; refresh
+                        		600          ; retry
+                        		86400        ; expire
+                        		3600       ) ; default TTL
+
+;
+;  Zone NS records
+;
+
+@                       NS	srv-win2019.
+
+;
+;  Zone records
+;
+
+host                    A	10.31.1.55
+srv-win2019             A	10.211.55.11
+www                     CNAME	srv-win2019.contoso.adds.

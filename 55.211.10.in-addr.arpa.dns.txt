@@ -1,0 +1,23 @@
+;
+;  Database file 55.211.10.in-addr.arpa.dns.txt for Default zone scope in zone 55.211.10.in-addr.arpa.
+;      Zone version:  2
+;
+
+@                       IN  SOA srv-win2019. hostmaster. (
+                        		2            ; serial number
+                        		900          ; refresh
+                        		600          ; retry
+                        		86400        ; expire
+                        		3600       ) ; default TTL
+
+;
+;  Zone NS records
+;
+
+@                       NS	srv-win2019.
+
+;
+;  Zone records
+;
+
+11                      PTR	srv-win2019.contoso.adds.
