@@ -21,4 +21,11 @@ Add-DhcpServerv4ExclusionRange -StartRange 10.211.55.101 -Endrage 10.211.55.110 
 Set-DhcpServerV4OptionValue -ComputerName contoso.adds -ScopeID 10.211.55.11 -DNSServer 10.211.55.11 -Router 10.211.55.1
 
 Add-DhcpServerv4Reservation -ScopeID 10.0.0.0 -IPaddress 10.211.55.101 -ClientID "00-15-5d-56-9e-04" -Description "Reservation for MEL-SVR2"
+
+Set-DhcpServerv4Optionvalue -OptionId 3 -value 10.211.55.? -ScopeId 10.211.55.0
+
+Set-DhcpServerv4Optionvalue -OptionId 6 -value 10.211.55.11 -ScopeId 10.211.55.0
+
+Set-DhcpServerv4Optionvalue -OptionId 15 -value contoso.adds -ScopeId 10.211.55.0
+
 ```
