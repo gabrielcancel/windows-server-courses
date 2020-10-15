@@ -1,4 +1,3 @@
-How to install/uninstall DNS Feature, create DNS zones and add/remove records
 
 
 ```powershell
