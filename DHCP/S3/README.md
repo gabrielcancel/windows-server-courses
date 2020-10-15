@@ -12,8 +12,6 @@ Restart-Service DHCPServer
 
 Set-ItemProperty -Path registry::HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\ServerManager\Roles\12 -Name ConfigurationState -Value 2
 
-Add-DhcpServerInDC -DNSName contoso.adds -IPAddress 10.211.55.11
-
 Add-DhcpServerV4Scope -name "Etendu_101-110" -StartRange 10.211.55.101 -Endrange 10.211.55.110 -SubnetMask 255.0.0.0 -State Active
 
 Add-DhcpServerv4ExclusionRange -StartRange 10.211.55.101 -Endrage 10.211.55.110 -ScopeId 10.0.0.0
